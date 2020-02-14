@@ -14,3 +14,6 @@ The code is broken up into several components:
 3. `/data-analysis`: R scripts that analyze `data-sanitized`.
 4. `/data-processed`: The output of `data-analysis`, in Plotly compatible JSON.
 5. `/`: The top level is a React based website built with Gatsby to display the results of everything above.
+
+## Data origin
+Due to the cyberattack against New Orleans city government in December 2019, OIPM does not currently have access to the underlying data sets required for this report. For the time being, data from data.nola.gov is being used for Use of Force and Misconduct.
