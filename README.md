@@ -17,3 +17,13 @@ The code is broken up into several components:
 
 ## Data origin
 Due to the cyberattack against New Orleans city government in December 2019, OIPM does not currently have access to the underlying data sets required for this report. For the time being, data from data.nola.gov is being used for Use of Force and Misconduct.
+
+## Quick start
+
+### Install dependencies
+
+**R**
+```
+install.packages('dplyr')
+install.packages('plotly')
+```
