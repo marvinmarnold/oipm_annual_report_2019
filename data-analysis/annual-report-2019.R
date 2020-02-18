@@ -38,6 +38,7 @@ ALLEGATIONS.CSV.SANITIZED <- "../data-sanitized/allegations-clean.csv"
 # Load libraries
 library(dplyr)
 library(plotly)
+library(stringr)
 #library(tidyr)
 
 # Local helpers
@@ -56,6 +57,6 @@ allegations.all <- read.csv(ALLEGATIONS.CSV.SANITIZED, stringsAsFactors = FALSE,
 
 ########################################################################################################
 ########################################## PERFORM ANALYSIS ############################################
-nrow(uof.all)
+#nrow(uof.all)
 nrow(allegations.all)
 

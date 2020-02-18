@@ -2,7 +2,7 @@ check.vars(c("allegations.all"))
 title <- "Allegations by year"
 
 start.year <- 2016
-end.year <- 2019
+end.year <- 2018
 
 ########################################################################################################
 ########################################################################################################
@@ -15,17 +15,18 @@ annotations <- list(x = xs, y = ys, text = vals, xanchor = 'center',
                     yanchor = 'top',
                     showarrow = FALSE)
 
+allegations.all %>% filter(Year.of.Record == 2016) %>% nrow
 allegations.by.year <- allegations.all %>% 
-  filter(year.of.record >= start.year) %>%
-  filter(year.of.record <= end.year) %>%
-  group_by(year.of.record, Incident.type)
+  filter(Year.of.Record >= start.year) %>%
+  filter(Year.of.Record <= end.year) %>%
+  group_by(Year.of.Record, Incident.type)
 
 count.by.year.type <- summarise(allegations.by.year, num = n())
 
 p.allegations.by.year.type <- plot_ly(count.by.year.type) %>%
   
   # Stacked bars by exp
-  add_trace(x = ~year.of.record, 
+  add_trace(x = ~Year.of.Record, 
             y = ~num, 
             type = 'bar',  
             name = ~Incident.type, 
