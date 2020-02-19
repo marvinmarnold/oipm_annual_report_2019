@@ -27,7 +27,8 @@ CSV_SEP <- ";"
 
 ############################################ DATA PATHS ################################################
 ######### Use of Force
-UOF.CSV.SANITIZED <- "../data-sanitized/NOPD_Use_of_Force_Incidents_20200214.csv"
+UOF.CSV.DIRTY <- "../data-raw/NOPD_Use_of_Force_Incidents_20200214.csv"
+UOF.CSV.SANITIZED <- "../data-sanitized/uof-clean.csv"
 
 ######### Allegations
 ALLEGATIONS.CSV.DIRTY <- "../data-raw/NOPD_Misconduct_Complaints_20200214.csv"
@@ -54,9 +55,10 @@ load.subdirectory("../data-sanitizers")
 ############################################# LOAD DATA ################################################
 
 allegations.all <- read.csv(ALLEGATIONS.CSV.SANITIZED, stringsAsFactors = FALSE, sep = CSV_SEP)
+uof.all <- read.csv(UOF.CSV.SANITIZED, stringsAsFactors = FALSE, sep = CSV_SEP)
 
 ########################################################################################################
 ########################################## PERFORM ANALYSIS ############################################
-#nrow(uof.all)
-nrow(allegations.all)
 
+print("Going to run all analysis")
+load.subdirectory("data-analysis")

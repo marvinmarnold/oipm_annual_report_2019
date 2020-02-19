@@ -19,3 +19,15 @@ load.subdirectory <- function(subdir) {
     source(source.file)
   })
 }
+
+################################################################################
+################################################################################
+## Plotly
+
+# Helper function to write Plotly JSON
+gen.plotly.json <- function(p, name) {
+  p.json <- plotly::plotly_json(config(p, collaborate = FALSE), FALSE)  
+  write(p.json, paste0(PLOTLY.OUTPUT.PATH, name, ".json"))
+}
+
+
