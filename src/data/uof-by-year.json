@@ -1,10 +1,10 @@
 {
   "visdat": {
-    "58914c8945d3": ["function () ", "plotlyVisDat"]
+    "58917b30a207": ["function () ", "plotlyVisDat"]
   },
-  "cur_data": "58914c8945d3",
+  "cur_data": "58917b30a207",
   "attrs": {
-    "58914c8945d3": {
+    "58917b30a207": {
       "x": {},
       "y": {},
       "mode": "lines+markers+text",
@@ -21,7 +21,7 @@
       "spans": [1, 20],
       "type": "scatter"
     },
-    "58914c8945d3.1": {
+    "58917b30a207.1": {
       "x": [2013, 2014, 2015, 2016],
       "y": [725, 706, 1071, 1570],
       "mode": "lines+markers+text",
@@ -74,8 +74,7 @@
   },
   "source": "A",
   "config": {
-    "showSendToCloud": false,
-    "collaborate": false
+    "showSendToCloud": false
   },
   "data": [
     {
