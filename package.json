@@ -14,10 +14,13 @@
     "gatsby-plugin-sharp": "^2.4.3",
     "gatsby-source-filesystem": "^2.1.46",
     "gatsby-transformer-sharp": "^2.3.13",
+    "plotly.js": "^1.52.2",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-helmet": "^5.2.1",
+    "react-plotly.js": "^2.4.0",
+    "react-spinners": "^0.8.0",
     "reactstrap": "^8.4.1"
   },
   "devDependencies": {

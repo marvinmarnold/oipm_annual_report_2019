@@ -48,7 +48,7 @@ class IndexPage extends React.Component {
           </DropdownMenu>
         </ButtonDropdown>
 
-        <Button className="my-2" size="lg" color="success"><a href="https://nolaipm.gov/annual-reports/" className="text-white">Download full report</a></Button>
+        <Button disabled className="my-2" size="lg" color="success"><span className="text-white">Download full report: coming soon</span></Button>
       </div>
     )
   }
@@ -58,7 +58,8 @@ class IndexPage extends React.Component {
       <Layout>
         <SEO title="2019 OIPM Annual Report" keywords={[
             `New Orleans`, `police`, `OIPM`, `NOPD`, `independent police monitor`,
-            `oversight`, `data`, `analysis`, `annual report`, `2018`
+            `oversight`, `data`, `analysis`, `annual report`, `2019`, 
+            `use of force`, `misconduct`, `mediation`, `demographics`
           ]} />
 
         <div className="bg-primary">
