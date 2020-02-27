@@ -3,7 +3,7 @@ import { Row, Col } from 'reactstrap'
 import { Link } from "gatsby"
 
 import UofByYearPlot from './uof-by-year-plot'
-// import FtnByYearPlot from './ftn-by-year-plot'
+import FtnByYearPlot from './ftn-by-year-plot'
 // import ForceByMonthPlot from './force-by-month-plot'
 
 class ForceTimeSection extends React.Component {
@@ -17,20 +17,21 @@ class ForceTimeSection extends React.Component {
         <Row>
           <Col><h4>Annual Comparison - Amount of Force (UOF) by Year</h4></Col>
         </Row>
+        
+        <Row>
+          <Col>
+            <FtnByYearPlot />
+            <h5 className="text-center">FIGURE 2: TOTAL FTN BY YEAR</h5>
+
+          </Col>
+        </Row>
+
         <Row>
           <Col>
             <UofByYearPlot />
             <h5 className="text-center">FIGURE 3: TOTAL UOF BY YEAR</h5>
 
           </Col>
-        </Row>
-        <Row>
-          <Col>
-            <ul>
-              <li>TODO</li>
-            </ul>
-          </Col>
-
         </Row>
       </div>
     )

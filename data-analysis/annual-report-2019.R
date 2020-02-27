@@ -61,4 +61,4 @@ uof.all <- read.csv(UOF.CSV.SANITIZED, stringsAsFactors = FALSE, sep = CSV_SEP)
 ########################################## PERFORM ANALYSIS ############################################
 
 print("Going to run all analysis")
-load.subdirectory("../data-analysis")
+load.subdirectory("../data-analysis/force")

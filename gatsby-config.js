@@ -1,4 +1,5 @@
 module.exports = {
+   pathPrefix: "/oipm_annual_report_2019",
   siteMetadata: {
     title: `OIPM 2019 Annual Report`,
     description: `Data analysis for New Orleans Office of the Independent Police Monitor's 2019 Annual Report.`,
