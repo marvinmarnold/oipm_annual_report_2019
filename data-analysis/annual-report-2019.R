@@ -57,6 +57,8 @@ load.subdirectory("../data-sanitizers")
 
 allegations.all <- read.csv(ALLEGATIONS.CSV.SANITIZED, stringsAsFactors = FALSE, sep = CSV_SEP)
 uof.all <- read.csv(UOF.CSV.SANITIZED, stringsAsFactors = FALSE, sep = CSV_SEP)
+uof.for.year <- uof.all %>% filter(year.of.record == CURRENT.YEAR)
+
 uof.reported.2015 <- read.csv(UOF.2015.CSV.SANITIZED, stringsAsFactors = FALSE, sep = CSV_SEP)
 
 ########################################################################################################
