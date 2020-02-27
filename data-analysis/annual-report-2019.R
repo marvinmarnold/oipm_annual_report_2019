@@ -12,7 +12,7 @@ readRenviron(".Renviron")
 #setwd("/home/pili/code/oipm/annual-report-2018/")
 
 # The current year to analyze
-#IAPRO.FIRST.YEAR <- 2016
+IAPRO.FIRST.YEAR <- 2016
 CURRENT.YEAR <- 2019
 PLOTLY.OUTPUT.PATH <- "../src/data/"
 
@@ -29,6 +29,7 @@ CSV_SEP <- ";"
 ######### Use of Force
 UOF.CSV.DIRTY <- "../data-raw/NOPD_Use_of_Force_Incidents_20200214.csv"
 UOF.CSV.SANITIZED <- "../data-sanitized/uof-clean.csv"
+UOF.2015.CSV.SANITIZED <- "../data-sanitized/uof-2015-sanitized.csv"
 
 ######### Allegations
 ALLEGATIONS.CSV.DIRTY <- "../data-raw/NOPD_Misconduct_Complaints_20200214.csv"
@@ -56,6 +57,7 @@ load.subdirectory("../data-sanitizers")
 
 allegations.all <- read.csv(ALLEGATIONS.CSV.SANITIZED, stringsAsFactors = FALSE, sep = CSV_SEP)
 uof.all <- read.csv(UOF.CSV.SANITIZED, stringsAsFactors = FALSE, sep = CSV_SEP)
+uof.reported.2015 <- read.csv(UOF.2015.CSV.SANITIZED, stringsAsFactors = FALSE, sep = CSV_SEP)
 
 ########################################################################################################
 ########################################## PERFORM ANALYSIS ############################################
